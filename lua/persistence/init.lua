@@ -55,6 +55,10 @@ function M.start()
         end
       end
 
+      if not Config.options.condition() then
+        return
+      end
+
       M.save()
       M.fire("SavePost")
     end,
