@@ -55,7 +55,7 @@ function M.start()
         end
       end
 
-      if not Config.options.condition() then
+      if not Config.options.save_when() then
         return
       end
 
